@@ -2,11 +2,23 @@
 
 
 
-This project uses plant leaf images for four-class tomato leaf disease classification.
+\## Source
 
 
 
-\## Classes
+The project uses the PlantVillage dataset for plant leaf disease classification.
+
+
+
+The original dataset contains images of healthy and diseased plant leaves across multiple plant and disease categories.
+
+
+
+\## Selected Classes
+
+
+
+For this project, four tomato leaf categories were selected:
 
 
 
@@ -20,9 +32,75 @@ This project uses plant leaf images for four-class tomato leaf disease classific
 
 
 
-The complete image dataset is not included in this Git repository to keep the repository lightweight.
+\## Dataset Preparation
 
 
 
-The notebook contains the preprocessing and model-training pipeline used for the project.
+A balanced subset was created for this project.
+
+
+
+Approximately 500 images were selected from each class.
+
+
+
+The selected images were divided into:
+
+
+
+\- 80% training data
+
+\- 10% validation data
+
+\- 10% test data
+
+
+
+This gives approximately:
+
+
+
+| Split | Images |
+
+|---|---:|
+
+| Training | 1600 |
+
+| Validation | 200 |
+
+| Testing | 200 |
+
+| Total | 2000 |
+
+
+
+The images are not stored in the Git repository to keep the repository lightweight.
+
+
+
+The `scripts/prepare\_dataset.py` script contains the procedure used to create the processed dataset from the original PlantVillage images.
+
+
+
+\## Image Type
+
+
+
+The color images are used for model training because color information can be useful for identifying visible symptoms such as discoloration and lesions.
+
+
+
+\## Reproducibility
+
+
+
+To reproduce the processed dataset, place the original PlantVillage dataset in the expected source directory and run:
+
+
+
+```text
+
+python scripts/prepare\_dataset.py
+
+```
 
