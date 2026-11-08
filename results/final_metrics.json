@@ -1,0 +1,9 @@
+{
+    "frozen_model_validation_accuracy": 0.9100000262260437,
+    "fine_tuned_model_validation_accuracy": 0.9399999976158142,
+    "final_test_accuracy": 0.9549999833106995,
+    "final_test_loss": 0.12306301295757294,
+    "total_test_images": 200,
+    "correct_predictions": 191,
+    "incorrect_predictions": 9
+}
